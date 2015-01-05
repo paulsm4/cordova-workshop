@@ -94,6 +94,7 @@ D:\paul\proj\phonegap\workshop\platforms\android\assets\www\assets\ratchet\fonts
 D:\paul\proj\phonegap\workshop\platforms\android\assets\www\assets\ratchet\fonts\ratchicons.woff \
 D:\paul\proj\phonegap\workshop\platforms\android\assets\www\js\app.js \
 D:\paul\proj\phonegap\workshop\platforms\android\assets\www\js\EmployeeListView.js \
+D:\paul\proj\phonegap\workshop\platforms\android\assets\www\js\EmployeeView.js \
 D:\paul\proj\phonegap\workshop\platforms\android\assets\www\js\HomeView.js \
 D:\paul\proj\phonegap\workshop\platforms\android\assets\www\js\services \
 D:\paul\proj\phonegap\workshop\platforms\android\assets\www\js\services\json \

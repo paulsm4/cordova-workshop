@@ -2,23 +2,53 @@
 (function () {
 
     /* ---------------------------------- Local Variables ---------------------------------- */
- /* OLD:
-    var homeTpl = Handlebars.compile($("#home-tpl").html());
-    var employeeListTpl = Handlebars.compile($("#employee-list-tpl").html()); 
-
-    var service = new EmployeeService();
-    service.initialize().done(function () {
-        renderHomeView();
-    });
-  */
-/* NEW: */
     HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
-    EmployeeListView.prototype.template =  Handlebars.compile($("#employee-list-tpl").html());
+    EmployeeListView.prototype.template = Handlebars.compile($("#employee-list-tpl").html());
+    EmployeeView.prototype.template = Handlebars.compile($("#employee-tpl").html());
 
+ /* OLD:
     var service = new EmployeeService();
     service.initialize().done(function () {
         $('body').html(new HomeView(service).render().$el);
     });
+  */
+/* NEW: */
+    var service = new EmployeeService();
+    service.initialize().done(function () {
+        router.addRoute('', function() {
+            console.log('empty');
+            $('body').html(new HomeView(service).render().$el);
+        });
+
+        router.addRoute('employees/:id', function(id) {
+            console.log('details');
+            service.findById(parseInt(id)).done(function(employee) {
+                $('body').html(new EmployeeView(employee).render().$el);
+            });
+        });
+
+        router.start();
+    });
+
+    /* --------------------------------- Event Registration -------------------------------- */
+    document.addEventListener('deviceready', function () {
+/*    	
+        StatusBar.overlaysWebView( false );
+        StatusBar.backgroundColorByHexString('#ffffff');
+        StatusBar.styleDefault();
+        FastClick.attach(document.body);
+ */        
+        if (navigator.notification) { // Override default HTML alert with native dialog
+            window.alert = function (message) {
+                navigator.notification.alert(
+                    message,    // message
+                    null,       // callback
+                    "Workshop", // title
+                    'OK'        // buttonName
+                );
+            };
+        }
+    }, false);
     
     /* --------------------------------- Event Registration -------------------------------- */
  
