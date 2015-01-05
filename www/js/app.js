@@ -5,8 +5,9 @@
     HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
     EmployeeListView.prototype.template = Handlebars.compile($("#employee-list-tpl").html());
     EmployeeView.prototype.template = Handlebars.compile($("#employee-tpl").html());
+    var slider = new PageSlider($('body'));
 
- /* OLD:
+ /* OLD Chap10:
     var service = new EmployeeService();
     service.initialize().done(function () {
         $('body').html(new HomeView(service).render().$el);
@@ -17,13 +18,15 @@
     service.initialize().done(function () {
         router.addRoute('', function() {
             console.log('empty');
-            $('body').html(new HomeView(service).render().$el);
+            // $('body').html(new HomeView(service).render().$el);  // OLD  Chap 11
+            slider.slidePage(new HomeView(service).render().$el);  // NEW
         });
 
         router.addRoute('employees/:id', function(id) {
             console.log('details');
             service.findById(parseInt(id)).done(function(employee) {
-                $('body').html(new EmployeeView(employee).render().$el);
+                // $('body').html(new EmployeeView(employee).render().$el);  // OLD Chap 11
+                slider.slidePage(new EmployeeView(employee).render().$el);  // NEW
             });
         });
 
