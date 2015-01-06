@@ -6,6 +6,15 @@ D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\com\workshop\
 D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\com\workshop\R$string.class \
 D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\com\workshop\R$xml.class \
 D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\com\workshop\R.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactAccessor$WhereOptions.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactAccessor.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactAccessorSdk5.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactInfoDTO.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$1.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$2.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$3.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager$4.class \
+D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\contacts\ContactManager.class \
 D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
 D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$1.class \
 D:\paul\proj\phonegap\workshop\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2$1.class \
